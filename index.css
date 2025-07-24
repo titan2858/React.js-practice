@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.div1{
+  background-color: cyan;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px ;
+  border: 2px solid white;
+}
+
+.hover_effect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  transition: 0.7s ease;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.hover_effect img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+}
+
+.hover_effect:hover img{
+  transform: scale(1.1) translateZ(50px);
+}
